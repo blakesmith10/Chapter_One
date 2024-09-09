@@ -23,22 +23,20 @@ class MainActivity : AppCompatActivity() {
       trueButton = findViewById(R.id.true_button)
       falseButton = findViewById(R.id.false_button)
 
-
-
-
-      trueButton.setOnClickListener {
+        trueButton.setOnClickListener {
           Toast.makeText(
-                     this,
-                            "Correct",
-                    Toast.LENGTH_LONG
-                )
-                    .show()
+              this,
+              R.string.correct,
+              Toast.LENGTH_LONG
+          )
+              .show()
 
-             }
+        }
+
         falseButton.setOnClickListener {
             Toast.makeText(
                 this,
-                "Incorrect",
+                R.string.incorrect,
                 Toast.LENGTH_LONG
             )
                 .show()
